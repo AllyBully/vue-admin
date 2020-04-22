@@ -5,7 +5,7 @@ module.exports = {
     // 输出文件目录
     outputDir: process.env.NODE_ENV === 'production' ? 'dist' : 'devdist',
     // eslint-loader 是否在保存的时候检查
-    lintOnSave: true,
+    lintOnSave: false,
     /**
      *  webpack配置， see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
      */
@@ -40,7 +40,7 @@ module.exports = {
             }
         },
         // 启用 CSS modules for all css / pre-processor files.
-        requireModuleExtension: false
+        requireModuleExtension: true
     },
     // use thread-loader for babel & TS in production build
     // enabled by default if the machine has more than 1 cores

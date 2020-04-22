@@ -1,15 +1,24 @@
 <template>
-    <div>
-        123123123
-    </div>
+  <div id="login">
+    123123123
+    <el-button>默认按钮</el-button>
+    <el-button type="primary">主要按钮</el-button>
+    <el-button type="success">成功按钮</el-button>
+    <el-button type="info">信息按钮</el-button>
+    <el-button type="warning">警告按钮</el-button>
+    <el-button type="danger">危险按钮</el-button>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "index"
-    }
+export default {
+  name: "index"
+}
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+#login {
+  height: 100vh;
+  background-color: beige;
+}
 </style>
